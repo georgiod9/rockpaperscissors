@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Strawberry Days';
+    src: url('../../fonts/Strawberry\ Days.ttf') format('truetype');
+  }
+
+  
+@keyframes expandVertical {
+    0% {
+      height: 5vh;
+    }
+    100% {
+      height: 50vh;
+    }
+}
+
+@keyframes blinkArrow {
+    0% {
+      transform: scale(1.3);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+      transform: scale(1.3);
+    }
+}
+  
+
+.font-strawberry {
+    font-family: "Strawberry Days";
+}
+
+.font-m {
+    font-size: 1.5vw;
+}
+
+.container {
+    width: 60vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.connectWalletModule {
+    text-align: center;
+    margin: auto auto;
+}
+  
+
+.connectButtonSizing {
+    width: 20vw;
+    margin: auto auto;
+    transition: 0.4s all;
+    
+}
+
+.connectButtonSizing:hover {
+    margin: auto auto;
+    transition: 0.8s all;
+    transform: scale(1.2);
+  }
+  
+
+.connectButtonContent {
+    font-size: 20px;
+    font-family: "Strawberry Days";
+}
+
+
+.connectWalletContainer {
+    margin: auto auto;
+    width: max-content;
+
+}
+
+.ConnectContainer {
+
+}
+
+.arrowIconSizing {
+    padding-bottom: 20px;
+    transition: 0.2s all;
+    width: max-content;
+    margin: auto auto;
+
+    animation: 1.5s ease-out 0s infinite blinkArrow;
+
+    
+    
+}
+
+.arrowIconSizing:hover {
+    padding-bottom: 20px;
+    transition: 0.2s all;
+    transform: scale(1.2);
+}
+
+
+
+
+.welcomeCard {
+    width: 60vw;
+    height: 50vh;
+    background-color: rgba(255, 255, 255, 0.507);
+    opacity: 1;
+    margin: 5% auto;
+    border-radius: 30px;
+    backdrop-filter: blur(2px);
+  
+    animation: 1s ease-out 0s 1 expandVertical;
+  }

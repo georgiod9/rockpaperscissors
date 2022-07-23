@@ -1,0 +1,134 @@
+@use "sass:math";
+$n: 20;
+$animLength: 6;
+
+:root {
+    --bubble-offset1: 10;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; // not neccesary
+}
+
+html, body {
+    height: 100%;
+}
+
+
+@keyframes animate1 {
+    0% {
+        bottom: -20%;
+        transform: rotate(180deg);
+
+    }
+
+    100% {
+        bottom: 120%;
+        transform: rotate(0deg);
+
+    }
+}
+
+
+@keyframes animate2 {
+    0% {
+        transform: translate3d(0%, 100vh, 100px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate3d(0%, -20vh, 200px) rotate(360deg);
+    }
+}
+
+@keyframes animate3 {
+    0% {
+        transform: translate3d(0%, 120vh, 100px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate3d(0%, -40vh, 200px) rotate(360deg);
+    }
+}
+
+@keyframes animate4 {
+    0% {
+        transform: translate3d(0%, 120vh, 100px) rotate(360deg);
+    }
+
+    100% {
+        transform: translate3d(0%, -40vh, 100px) rotate(0deg);
+    }
+}
+
+.parent {
+    position: relative;
+    
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+
+
+.child1 {
+    position: absolute;
+    left: 5%;
+    animation: 16s ease-in-out 0s infinite animate1;
+}
+
+.bubble1Sizing {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+
+
+.child2 {
+    position: absolute;
+    top: 0%;
+    left: 20%;
+    
+    animation: 14s ease-in-out 0s infinite animate2;
+}
+
+.bubble2Sizing {
+    width: 20%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+.child3 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+
+    animation: 15s ease-in-out 0s infinite animate3;
+}
+
+
+.bubble3Sizing {
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0);
+
+}
+
+
+.child4 {
+    position: absolute;
+    top: 0%;
+    left: 75%;
+
+    animation: 14s ease-in-out 0s infinite animate4;
+}
+
+.bubble4Sizing {
+    width: 40%;
+    background-color: rgba(0, 128, 0, 0);
+
+}

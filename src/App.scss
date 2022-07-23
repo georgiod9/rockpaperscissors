@@ -1,5 +1,36 @@
+@import "custom.scss";
+
+@font-face {
+  font-family: 'Game On';
+  src: url('./fonts/Game\ On.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Strawberry Days';
+  src: url('./fonts/Strawberry\ Days.ttf') format('truetype');
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; // not neccesary
+ }
+
+html, body, #app, #app>div {
+  height: 100%
+}
+
+body {
+  height: 100vh;
+  background-color: #e09e3b;
+  margin: 0;
+}
+
 .App {
   text-align: center;
+  max-height: max-content;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 .App-logo {
